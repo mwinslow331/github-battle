@@ -8,7 +8,7 @@ function getProfile(username){
   return axios.get('https://api.github.com/users/' + username + params)
     .then(function(user){
       return user.data;
-    })
+    });
 }
 
 function getRepos(username){
@@ -17,15 +17,15 @@ function getRepos(username){
 
 function getStarCount(repos){
   return repos.data.reduce(function(count, repo){
-    return count + repo.stargazer_count;
-  }, 0)
+    return count + repo.stargazers_count
+  }, 0);
 }
 
 function calculateScore(profile, repos){
   let followers = profile.followers;
   let totalStars = getStarCount(repos);
 
-  return (followers * 3) + totalStars
+  return (followers * 3) + totalStars;
 }
 
 function handleError(error){
@@ -37,7 +37,7 @@ function getUserData(player){
   return axios.all([
     getProfile(player),
     getRepos(player)
-  ]).then(function (){
+  ]).then(function (data){
     let profile = data[0];
     let repos = data[1];
 
