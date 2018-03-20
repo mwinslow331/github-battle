@@ -6,8 +6,7 @@ import PropTypes from 'prop-types';
 import PlayerPreview from './PlayerPreview';
 import Loading from './Loading';
 
-const Profile = (props) => {
-  let info = props.info;
+const Profile = ({ info }) => {
   return (
     <PlayerPreview username={info.login} avatar={info.avatar_url}>
       <ul className='space-list-items'>
@@ -27,12 +26,12 @@ Profile.propTypes = {
   info: PropTypes.object.isRequired,
 }
 
-const Player = (props) => {
+const Player = ({label, score, profile }) => {
   return (
     <div>
-      <h1 className='header'>{props.label}</h1>
-      <h3 style={{textAlign: 'center'}}>Score: {props.score}</h3>
-      <Profile info={props.profile} />
+      <h1 className='header'>{label}</h1>
+      <h3 style={{textAlign: 'center'}}>Score: {score}</h3>
+      <Profile info={profile} />
     </div>
   )
 }
@@ -54,34 +53,28 @@ class Results extends Component {
     }
   }
   componentDidMount(){
-    let players = queryString.parse(this.props.location.search);
+    const { playerOneName, playerTwoName } = queryString.parse(this.props.location.search);
+
     api.battle([
-      players.playerOneName,
-      players.playerTwoName
-    ]).then(function(results){
-      if (results === null){
-        return this.setState(function() {
-          return {
-            error: 'There appears to be an error. Check that both Github users exist.',
-            loading: false
-          }
-        });
+      playerOneName,
+      playerTwoName
+    ]).then((players) => {
+      if (players === null) {
+        return this.setState(() =>  ({
+          error: 'There appears to be an error. Check that both Github users exist.',
+          loading: false,
+        }))
       }
-      this.setState(function(){
-        return {
-          error: null,
-          winner: results[0],
-          loser: results[1],
-          loading: false
-        }
-      })
-    }.bind(this));
+      this.setState(() => ({
+        error: null,
+        winner: players[0],
+        loser: players[1],
+        loading: false
+      }));
+    });
   }
   render(){
-    let error = this.state.error;
-    let winner = this.state.winner;
-    let loser = this.state.loser;
-    let loading = this.state.loading;
+    const { error, winner, loser, loading } = this.state
 
     if (loading === true){
       return <Loading />
