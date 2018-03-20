@@ -52,21 +52,16 @@ SelectLanguage.propTypes = {
 }
 
 class Popular extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      selectedLanguage: 'All',
-      repos: null
-    };
-
-    this.updateLanguage = this.updateLanguage.bind(this);
+  state = {
+    selectedLanguage: 'All',
+    repos: null
   }
 
   componentDidMount() {
     this.updateLanguage(this.state.selectedLanguage);
   }
 
-  updateLanguage(lang) {
+  updateLanguage = (lang) => {
     this.setState(() => ({
       selectedLanguage: lang,
       repos: null

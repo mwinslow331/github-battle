@@ -9,11 +9,16 @@ const styles = {
 }
 
 class Loading extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      text: props.text
-    };
+  static propTypes = {
+    text: PropTypes.string.isRequired,
+    speed: PropTypes.number.isRequired,
+  }
+  static defaultProps = {
+    text: 'Loading',
+    speed: 300,
+  }
+  state = {
+      text: this.props.text
   }
 
   componentDidMount() {
@@ -27,7 +32,7 @@ class Loading extends Component {
     }, speed)
   }
 
-  componentWillUnmount(){
+  componentWillUnmount() {
     window.clearInterval(this.interval);
   }
 
@@ -40,14 +45,5 @@ class Loading extends Component {
   }
 }
 
-Loading.ProptTypes = {
-  text: PropTypes.string.isRequired,
-  speed: PropTypes.number.isRequired,
-}
-
-Loading.defaultProps = {
-  text: 'Loading',
-  speed: 300,
-}
 
 export default Loading;
