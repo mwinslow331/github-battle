@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Battle from './components/Battle';
 import Results from './components/Results';
 
+
 class App extends Component{
   render(){
     return(
