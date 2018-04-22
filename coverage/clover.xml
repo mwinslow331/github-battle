@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1524437549002" clover="3.2.0">
+  <project timestamp="1524437549002" name="All files">
+    <metrics statements="85" coveredstatements="18" conditionals="33" coveredconditionals="0" methods="49" coveredmethods="2" elements="167" coveredelements="20" complexity="0" loc="85" ncloc="85" packages="3" files="10" classes="10">
+      <package name="app">
+        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <file name="App.js" path="/Users/michaelwinslow/2018/tyler/github-battle/app/App.js">
+          <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="22" count="0" type="stmt"/>
+        </file>
+        <file name="setupTests.js" path="/Users/michaelwinslow/2018/tyler/github-battle/app/setupTests.js">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="4" count="2" type="stmt"/>
+        </file>
+      </package>
+      <package name="app.components">
+        <metrics statements="62" coveredstatements="13" conditionals="31" coveredconditionals="0" methods="36" coveredmethods="1"/>
+        <file name="Battle.js" path="/Users/michaelwinslow/2018/tyler/github-battle/app/components/Battle.js">
+          <metrics statements="14" coveredstatements="0" conditionals="11" coveredconditionals="0" methods="11" coveredmethods="0"/>
+          <line num="22" count="0" type="stmt"/>
+          <line num="24" count="0" type="stmt"/>
+          <line num="28" count="0" type="stmt"/>
+          <line num="30" count="0" type="stmt"/>
+          <line num="37" count="0" type="stmt"/>
+          <line num="38" count="0" type="stmt"/>
+          <line num="39" count="0" type="stmt"/>
+          <line num="70" count="0" type="stmt"/>
+          <line num="77" count="0" type="stmt"/>
+          <line num="84" count="0" type="stmt"/>
+          <line num="85" count="0" type="stmt"/>
+          <line num="87" count="0" type="stmt"/>
+          <line num="102" count="0" type="stmt"/>
+          <line num="119" count="0" type="stmt"/>
+        </file>
+        <file name="Home.js" path="/Users/michaelwinslow/2018/tyler/github-battle/app/components/Home.js">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="6" count="1" type="stmt"/>
+        </file>
+        <file name="Loading.js" path="/Users/michaelwinslow/2018/tyler/github-battle/app/components/Loading.js">
+          <metrics statements="9" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="0"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="25" count="0" type="stmt"/>
+          <line num="26" count="0" type="stmt"/>
+          <line num="28" count="0" type="stmt"/>
+          <line num="29" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="30" count="0" type="stmt"/>
+          <line num="31" count="0" type="stmt"/>
+          <line num="36" count="0" type="stmt"/>
+          <line num="40" count="0" type="stmt"/>
+        </file>
+        <file name="Nav.js" path="/Users/michaelwinslow/2018/tyler/github-battle/app/components/Nav.js">
+          <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="0" type="stmt"/>
+        </file>
+        <file name="PlayerPreview.js" path="/Users/michaelwinslow/2018/tyler/github-battle/app/components/PlayerPreview.js">
+          <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="0" type="stmt"/>
+          <line num="20" count="1" type="stmt"/>
+        </file>
+        <file name="Popular.js" path="/Users/michaelwinslow/2018/tyler/github-battle/app/components/Popular.js">
+          <metrics statements="16" coveredstatements="4" conditionals="4" coveredconditionals="0" methods="10" coveredmethods="0"/>
+          <line num="6" count="1" type="stmt"/>
+          <line num="7" count="0" type="stmt"/>
+          <line num="8" count="0" type="stmt"/>
+          <line num="11" count="0" type="stmt"/>
+          <line num="13" count="0" type="stmt"/>
+          <line num="22" count="1" type="stmt"/>
+          <line num="23" count="0" type="stmt"/>
+          <line num="26" count="0" type="stmt"/>
+          <line num="45" count="1" type="stmt"/>
+          <line num="49" count="1" type="stmt"/>
+          <line num="61" count="0" type="stmt"/>
+          <line num="65" count="0" type="stmt"/>
+          <line num="70" count="0" type="stmt"/>
+          <line num="71" count="0" type="stmt"/>
+          <line num="75" count="0" type="stmt"/>
+          <line num="76" count="0" type="stmt"/>
+        </file>
+        <file name="Results.js" path="/Users/michaelwinslow/2018/tyler/github-battle/app/components/Results.js">
+          <metrics statements="17" coveredstatements="4" conditionals="14" coveredconditionals="0" methods="6" coveredmethods="0"/>
+          <line num="9" count="1" type="stmt"/>
+          <line num="10" count="0" type="stmt"/>
+          <line num="25" count="1" type="stmt"/>
+          <line num="29" count="1" type="stmt"/>
+          <line num="30" count="0" type="stmt"/>
+          <line num="39" count="1" type="stmt"/>
+          <line num="54" count="0" type="stmt"/>
+          <line num="56" count="0" type="stmt"/>
+          <line num="61" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="62" count="0" type="stmt"/>
+          <line num="67" count="0" type="stmt"/>
+          <line num="76" count="0" type="stmt"/>
+          <line num="78" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="79" count="0" type="stmt"/>
+          <line num="82" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="83" count="0" type="stmt"/>
+          <line num="91" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="app.utils">
+        <metrics statements="20" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="11" coveredmethods="0"/>
+        <file name="api.js" path="/Users/michaelwinslow/2018/tyler/github-battle/app/utils/api.js">
+          <metrics statements="20" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="11" coveredmethods="0"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="7" count="0" type="stmt"/>
+          <line num="9" count="0" type="stmt"/>
+          <line num="13" count="0" type="stmt"/>
+          <line num="15" count="0" type="stmt"/>
+          <line num="19" count="0" type="stmt"/>
+          <line num="23" count="0" type="stmt"/>
+          <line num="27" count="0" type="stmt"/>
+          <line num="28" count="0" type="stmt"/>
+          <line num="32" count="0" type="stmt"/>
+          <line num="37" count="0" type="stmt"/>
+          <line num="44" count="0" type="stmt"/>
+          <line num="48" count="0" type="stmt"/>
+          <line num="51" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="57" count="0" type="stmt"/>
+          <line num="59" count="0" type="stmt"/>
+          <line num="62" count="0" type="stmt"/>
+          <line num="64" count="0" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>
