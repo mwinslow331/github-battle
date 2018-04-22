@@ -8,6 +8,7 @@ The purpose of taking this course was to further my understanding on how webpack
 I am currently in the process of writing tests for 90% coverage and will be expanding and modifiying the code base for additional features. Tests are written with Enzyme and Jest.
 
 <p align="center">
-  <img src="http://chenglou.github.io/react/img/logo.svg" width="200"/>
+  <img src="http://chenglou.github.io/react/img/logo.svg" width="200" />
+  <img src="https://cdn.auth0.com/blog/testing-react-with-jest/logo.png" width="200" />
 </p>
 
