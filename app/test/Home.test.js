@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow, expect } from 'enzyme';
+import { shallow } from 'enzyme';
 import Home from '../components/Home';
 
 it('renders battle friends title', () => {
