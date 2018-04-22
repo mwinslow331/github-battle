@@ -4,3 +4,5 @@ We used the Github API to compile user data into a single page application. The 
 https://github-battle-9db8c.firebaseapp.com/.
 
 The purpose of taking this course was to further my understanding on how webpack worked in the background and ease the transition from the development phase to build stage. 
+
+I am currently in the process of writing tests for 90% coverage and will be expanding and modifiying the code base for additional features. Tests are written with Enzyme and Jest.
