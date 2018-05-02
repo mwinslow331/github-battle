@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import PlayerPreview from './PlayerPreview';
 
 
-class PlayerInput extends Component {
+export class PlayerInput extends Component {
   static propTypes = {
     id: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
