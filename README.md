@@ -1,3 +1,5 @@
+<a href='https://coveralls.io/github/mwinslow331/github-battle?branch=master'><img src='https://coveralls.io/repos/github/mwinslow331/github-battle/badge.svg?branch=master' alt='Coverage Status' /></a>
+
 This is a web application built through instructions on https://tylermcginnis.com/ but refactored to ES6 during the course. This was built with React.js using React -v 16, React Router 4 and webpack -v 3.
 
 We used the Github API to compile user data into a single page application. The hosting site is firebase and is available at the following:
